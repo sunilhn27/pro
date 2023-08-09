@@ -6,6 +6,10 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    fontFamily: {
+      sans: ['"Josefin Sans"', 'ui-sans-serif', 'system-ui'],
+    },
+
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
