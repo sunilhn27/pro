@@ -5,7 +5,7 @@ module.exports = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
-  darkMode: "class",
+  darkMode:"class",
   theme: {
     fontFamily: {
       sans: ['"Josefin Sans"', 'ui-sans-serif', 'system-ui'],
