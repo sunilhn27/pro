@@ -16,7 +16,7 @@ function HeroSection() {
                     <div className='text-4xl font-semibold'>
                         <p>Sunil <span className='text-[#7E74F1]'>H N.</span></p>
                     </div>
-                    <div className='w-[550px] text-[#232E35] dark:text-white dark:bg-black '>
+                    <div className='w-[550px] '>
                         <p>Creative front-end developer with more than +5 years of experience in enterprise companies and startups. Proficient in JavaScript, Angular, and React. Passionate about UI/UX</p>
                     </div>
                     <div className='flex space-x-6'>
