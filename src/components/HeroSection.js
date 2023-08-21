@@ -12,6 +12,7 @@ function HeroSection() {
         <section className='mt-24 '>
             <div className='flex flex-col-reverse  sm:flex-row items-center justify-evenly h-[500px] -scroll-mx-24 '>
                 <div className='flex flex-col space-y-4 mt-12 mx-4'>
+                <div className='flex flex-col space-y-4 mt-12 mx-4'>
                     <h1 className='text-[#656D72] text-[15px]  w-[190px] h-[24px]'>MY NAME IS</h1>
                     <div className='text-4xl font-semibold'>
                         <p>Sunil <span className='text-[#7E74F1]'>H N.</span></p>
@@ -25,6 +26,7 @@ function HeroSection() {
                         <CiTwitter className='w-6 h-6' />
                         <BsLinkedin className='w-6 h-6' />
                     </div>
+                </div>
                 </div>
 
                 <div className='flex mt-12'>
