@@ -9,28 +9,26 @@ import Lines from '@/asserts/images/lines.png'
 
 function Hero() {
     return (
-        <section className='w-[1270px] h-[496px]  my-12 border-2 border-red-500'>
+        <section className='flex flex-col-reverse sm:flex-row justify-evenly md:mx-32 mx-10 mt-32 '>
 
-            <div className='flex flex-col-reverse sm:flex-row justify-evenly '>
-                <div className='flex flex-col space-y-4 mt-32 mx-4 '>
-                    <h3 className='px-6'>MY NAME IS</h3>
-                    <h1 className='text-5xl'>Alex <span className='text-[#7E74F1] font-semibold'>Smith.</span></h1>
-                    <p className='w-[400px] sm:w-[538px] h-[96px] text-gray-500'>Creative front-end developer with more than +5 years of experience in enterprise companies and startups. Proficient in JavaScript, Angular, and React. Passionate about UI/UX</p>
-                    <div className='flex space-x-6'>
-                        <AiFillGithub className='w-6 h-6' />
-                        <AiOutlineInstagram className='w-6 h-6' />
-                        <CiTwitter className='w-6 h-6' />
-                        <BsLinkedin className='w-6 h-6' />
-                    </div>
+            <div className='flex flex-col my-auto space-y-4 md:w-1/2'>
+                <h1>MY NAME IS</h1>
+                <div className='text-4xl md:text-5xl font-semibold'>
+                    <p>Sunil <span className='text-[#7E74F1]'>H N.</span></p>
                 </div>
-
-                <div className='flex mt-12 relative items-center jus'>
-                    <div className=''>
-
-
-                        <Image src={Pic} className=' top-32 left-10' />
-                    </div>
+                <p className='w-[95%] md:w-[510px] lg:text-lg'>Creative front-end developer with more than +5 years of experience in enterprise companies and startups. Proficient in JavaScript, Angular, and React. Passionate about UI/UX</p>
+                <div className='flex space-x-6'>
+                    <AiFillGithub className='w-6 h-6' />
+                    <AiOutlineInstagram className='w-6 h-6' />
+                    <CiTwitter className='w-6 h-6' />
+                    <BsLinkedin className='w-6 h-6' />
                 </div>
+            </div>
+
+
+            <div className=' mb-12 flex justify-center'>
+                <Image src={Pic} className='' />
+
             </div>
 
         </section>
