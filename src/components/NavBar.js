@@ -6,15 +6,17 @@ import Link from 'next/link'
 import Image from 'next/image'
 import second from '@/asserts/images/moon.png'
 import { BsSun, BsFillMoonFill } from 'react-icons/bs'
-import {RxHamburgerMenu} from 'react-icons/rx'
-import {AiOutlineClose} from 'react-icons/ai'
+import { RxHamburgerMenu } from 'react-icons/rx'
+import { AiOutlineClose } from 'react-icons/ai'
 
 
 function NavBar() {
     return (
         <section className='mt-10 '>
             <nav className='justify-between  mx-[10%] flex items-center px-1'>
-                <Image src={Logo} />
+                <Link href={"/"}>
+                    <Image src={Logo} />
+                </Link>
                 <div className='space-x-7'>
                     <Link href={"/"}>Services</Link>
                     <Link href={"/"}>Portfolios</Link>
@@ -22,7 +24,7 @@ function NavBar() {
                     <Link href={"/"}>Blog</Link>
                 </div>
                 <div className='flex space-x-6 items-center'>
-                    <RxHamburgerMenu className='w-6 h-6'/>
+                    <RxHamburgerMenu className='w-6 h-6' />
                     <button className='bg-gray-500 rounded-md px-4 py-2'>Resume</button>
                 </div>
             </nav>

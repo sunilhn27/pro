@@ -7,38 +7,32 @@ import Globe from '@/asserts/images/services/globe.png'
 function Services() {
 
 
-    const Service = ({ img, title, para }) => {
+    const Card = ({ img, title, desc }) => {
         return (
-            <div className='w-[360px] h-[290px] shadow-lg dark:border-2 rounded-lg'>
-                <div className='flex flex-col  items-center py-16 space-y-3'>
-                    <Image src={img} alt='ux' />
-                    <h1>{title}</h1>
-                    <p className='w-[250px] text-center'>{para}</p>
+            <>
+                <div className='w-[22rem] h-[14rem] md:w-[28rem] md:h-[22rem] shadow-xl  border-gray-500 border-2 py-8 flex mx-6 rounded-xl mb-6'>
+                    <div className='flex flex-col justify-center items-center space-y-3'>
+                        <Image src={img} className='w-10 h-10' alt='App' />
+                        <h1 className='md:text-2xl'>{title}</h1>
+                        <p className='px-[1rem] md:px-[2rem] text-center md:text-lg text-gray-500'>{desc}</p>
+                    </div>
                 </div>
-            </div>)
+            </>
+        )
     }
 
-    const appData = "Turn what you have in mind of a digital product into reality. For any platform you consider."
-
-
-    const appDev = "Standard designing, building, and implementing your applications with documentation."
-
-
-    const webDev = "Create and maintain your websites and also take care of its performance and traffic capacity."
-
     return (
-        <section className='mt-48 md:mt-32 h-[670px] w-full '>
-            <div className='flex flex-col items-center space-y-2 mb-12'>
-                <p className='text-gray-500'>SERVICES</p>
-                <h1 className='text-4xl font-semibold'>Specialized in</h1>
-            </div>
-            <div className='flex justify-center'>
-                <div className='grid gap-8 sm:grid-cols-3'>
-                    <Service img={App} title={"UI/UX Design"} para={appData} />
-                    <Service img={Crown} title={"Application Development"} para={appDev} />
-                    <Service img={Globe} title={"Web Development"} para={webDev} />
-
+        <section className='my-24'>
+            <div className='flex mx-auto justify-center mb-12'>
+                <div className='flex flex-col space-y-3'>
+                    <h3 className='text-gray-500 uppercase'>-Services</h3>
+                    <h1 className='text-4xl'>Specialized in</h1>
                 </div>
+            </div>
+            <div className=' flex flex-col  md:flex-row items-center justify-center md:space-x-6 px-6'>
+                <Card img={App} title={"UI/UX Design"} desc={"Turn what you have in mind of a digital product into reality. For any platform you consider."} />
+                <Card img={Crown} title={"Application Development"} desc={"Standard designing, building, and implementing your applications with documentation."} />
+                <Card img={Globe} title={"Web Development"} desc={"Create and maintain your websites and also take care of its performance and traffic capacity."} />
             </div>
         </section>
     )
