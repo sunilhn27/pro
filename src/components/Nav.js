@@ -22,7 +22,9 @@ function NavBar() {
     return (
         <section className="mt-12 px-4 ">
             <nav className="flex items-center justify-between md:justify-evenly">
-                {theme === "light" ? (<Image src={Logo} alt='Logo' className='text-white' />) : (<Image src={LogoWhite} alt='Logo' className='text-white' />)}
+                {theme === "light" ? (<Image src={Logo} alt='Logo' className='text-white' />) : (
+                    <Link href={"/"}>
+                        <Image src={LogoWhite} alt='Logo' className='text-white' /></Link>)}
 
                 <div className="hidden md:flex space-x-10 ">
                     <Link href={"/"}>Services</Link>
