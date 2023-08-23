@@ -51,8 +51,8 @@ function Experience() {
 
 
     return (
-        <section className='w-full h-[38rem]'>
-            <div className='flex flex-col md:flex-row mx-12 '>
+        <section id='experience' className='w-full h-[38rem]'>
+            <div className='flex flex-col md:flex-row mx-12 lg:ml-32'>
 
                 <div className='w-2/6  h-[38rem] flex flex-col justify-center px-4 md:border-r-4 '>
                     <div className='flex flex-col space-y-3'>
@@ -61,7 +61,7 @@ function Experience() {
                     </div>
                     <div className='mt-12 '>
                         {companies.map((company, index) => {
-                            return (<div key={index} onClick={() => handleSelecetdCompany(index)} className='w-[17rem] border-2 border-gray-500 rounded-r-full px-4 py-2 mb-6 hover:bg-black  hover:text-white cursor-pointer '>
+                            return (<div key={index} onClick={() => handleSelecetdCompany(index)} className='w-[17rem] border-2 border-gray-500 rounded-r-full px-4 py-2 mb-6 hover:text-[#7E74F1]   cursor-pointer '>
                                 {company.name}
                             </div>)
                         }
