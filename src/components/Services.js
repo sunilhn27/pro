@@ -10,7 +10,7 @@ function Services() {
     const Card = ({ img, title, desc }) => {
         return (
             <>
-                <div className='w-[22rem] h-[14rem] md:w-[28rem] md:h-[22rem] shadow-xl  border-gray-500 border-2 py-8 flex mx-6 rounded-xl mb-6'>
+                <div className='w-[22rem] h-[14rem] md:w-[28rem] md:h-[22rem] hover:shadow-2xl  border-gray-500 border-2 py-8 flex mx-6 rounded-xl mb-6'>
                     <div className='flex flex-col justify-center items-center space-y-3'>
                         <Image src={img} className='w-10 h-10' alt='App' />
                         <h1 className='md:text-2xl'>{title}</h1>
@@ -22,7 +22,7 @@ function Services() {
     }
 
     return (
-        <section className='my-24'>
+        <section className='mt-12 md:my-24'>
             <div className='flex mx-auto justify-center mb-12'>
                 <div className='flex flex-col space-y-3'>
                     <h3 className='text-gray-500 uppercase'>-Services</h3>
