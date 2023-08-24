@@ -16,8 +16,8 @@ function Hero() {
                 <div className='text-4xl md:text-5xl font-semibold'>
                     <p>Sunil <span className='text-[#7E74F1]'>H N.</span></p>
                 </div>
-                <p className='w-[95%] md:w-[510px] lg:text-lg text-gray-500'>Creative front-end developer with more than +5 years of experience in enterprise companies and startups. Proficient in JavaScript, Angular, and React. Passionate about UI/UX</p>
-                <div className='flex space-x-6'>
+                <p className='w-[95%] md:w-[510px] lg:text-lg text-gray-500 '>Creative front-end developer with more than +5 years of experience in enterprise companies and startups. Proficient in JavaScript, Angular, and React. Passionate about UI/UX</p>
+                <div className='flex space-x-6 '>
                     <AiFillGithub className='w-6 h-6' />
                     <AiOutlineInstagram className='w-6 h-6' />
                     <CiTwitter className='w-6 h-6' />
@@ -26,10 +26,10 @@ function Hero() {
             </div>
 
 
-            <div className=' mb-12 flex justify-center'>
+            <div className='mb-32 md:mb-12 flex justify-center'>
             <div className='relative'>
                         <Image src={Back} className='' />
-                        <div className='w-[336px] h-[400px] bg-[#EAE6FE] absolute top-6 left-10'></div>
+                        <div className='w-[21rem] h-[25rem] bg-[#EAE6FE] absolute top-6 left-10'></div>
                         <Image src={Lines} className='absolute top-14 left-48'/>
                         <Image src={Pic}  className='absolute top-32 left-10 w-[15rem] h-[18rem]' />
                     </div>
