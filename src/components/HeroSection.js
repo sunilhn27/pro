@@ -3,7 +3,7 @@ import { AiFillGithub, AiOutlineInstagram } from 'react-icons/ai'
 import { CiTwitter } from 'react-icons/ci'
 import { BsLinkedin } from 'react-icons/bs'
 import Image from 'next/image'
-import Pic from '@/asserts/images/pic.png'
+import Pic from '@/asserts/images/Pic1.png'
 import Back from '@/asserts/images/back.png'
 import Lines from '@/asserts/images/lines.png'
 

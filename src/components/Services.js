@@ -22,7 +22,7 @@ function Services() {
     }
 
     return (
-        <section className='mt-12 md:my-24'>
+        <section id="services" className='mt-12 md:my-24'>
             <div className='flex mx-auto justify-center mb-12'>
                 <div className='flex flex-col space-y-3'>
                     <h3 className='text-gray-500 uppercase'>-Services</h3>

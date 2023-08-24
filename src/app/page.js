@@ -1,3 +1,4 @@
+import Contact from '@/components/Contact'
 import CssUnits from '@/components/CssUnits'
 import Experience from '@/components/Experience'
 import Hero from '@/components/Hero'
@@ -8,8 +9,9 @@ export default function Home() {
   return (
     <main className='font-sans '>
       <Hero />
-      <Services/>
-      <Experience/>
+      <Services />
+      <Experience />
+      <Contact />
     </main>
   )
 }

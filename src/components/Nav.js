@@ -27,9 +27,9 @@ function NavBar() {
                         <Image src={LogoWhite} alt='Logo' className='text-white' /></Link>)}
 
                 <div className="hidden md:flex space-x-10 ">
-                    <Link href={"/"}>Services</Link>
+                    <Link href={"#services"}>Services</Link>
                     <Link href={"/"}>Portfolios</Link>
-                    <Link href={"/"}>Experience</Link>
+                    <Link href={"#experience"}>Experience</Link>
                     <Link href={"/"}>Blog</Link>
                 </div>
                 <div className="hidden md:flex items-center space-x-8">
@@ -54,9 +54,9 @@ function NavBar() {
                         {isMenuOpen ? <AiOutlineClose className="h-8 w-8" /> : <RxHamburgerMenu className="h-8 w-8" />}
                     </button>
                     <div className={`md:hidden ${isMenuOpen ? "block" : "hidden"}`}>
-                        <Link className="block py-2" href={"/"}>Services</Link>
+                        <Link className="block py-2" href={"#services"}>Services</Link>
                         <Link className="block py-2" href={"/"}>Portfolios</Link>
-                        <Link className="block py-2" href={"/"}>Experience</Link>
+                        <Link className="block py-2" href={"#experience"}>Experience</Link>
                         <Link className="block py-2" href={"/"}>Blog</Link>
 
                     </div>

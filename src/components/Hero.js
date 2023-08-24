@@ -3,7 +3,7 @@ import React from 'react'
 import { AiFillGithub, AiOutlineInstagram } from 'react-icons/ai'
 import { CiTwitter } from 'react-icons/ci'
 import { BsLinkedin } from 'react-icons/bs'
-import Pic from '@/asserts/images/pic.png'
+import Pic from '@/asserts/images/Pic1.png'
 import Back from '@/asserts/images/back.png'
 import Lines from '@/asserts/images/lines.png'
 
@@ -31,7 +31,7 @@ function Hero() {
                         <Image src={Back} className='' />
                         <div className='w-[336px] h-[400px] bg-[#EAE6FE] absolute top-6 left-10'></div>
                         <Image src={Lines} className='absolute top-14 left-48'/>
-                        <Image src={Pic} className='absolute top-32 left-10' />
+                        <Image src={Pic}  className='absolute top-32 left-10 w-[15rem] h-[18rem]' />
                     </div>
 
             </div>
