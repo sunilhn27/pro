@@ -8,7 +8,7 @@ const nextConfig = {
     env: {
         USERNAME: process.env.USERNAME,
         PASSWORD: process.env.PASSWORD,
-        TO: process.env.To
+        TO: process.env.TO
 
     }
 
