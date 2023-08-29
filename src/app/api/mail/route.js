@@ -8,20 +8,23 @@ import nodemailer from 'nodemailer';
 
 
 export async function POST(req, res) {
+
+    const { name, email, message } = await req.json();
+    console.log("name " + name)
+    console.log("message " + message)
     const transporter = nodemailer.createTransport({
-        host: 'smtp.ethereal.email',
-        port: 587,
+        service: 'Gmail',
         auth: {
-            user: '',
-            pass: ''
+            user: process.env.USERNAME,
+            pass: process.env.PASSWORD
         }
     });
 
     const mailOptions = {
-        from: '',
-        to: '',
-        subject: 'Subject of the email',
-        text: 'Content of the email',
+        from: process.env.USERNAME,
+        to: process.env.To,
+        subject: "From " + name,
+        text: `${email} : ${message}`,
     };
 
     try {
@@ -35,7 +38,7 @@ export async function POST(req, res) {
         NextResponse.json({ error: 'An error occurred while sending the email' });
     }
 
-  
+
 }
 
 
