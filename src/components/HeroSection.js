@@ -31,10 +31,10 @@ function HeroSection() {
 
                 <div className='flex mt-12'>
                     <div className='relative'>
-                        <Image src={Back} className='' />
+                        <Image src={Back} className='' alt='pics'/>
                         <div className='w-[336px] h-[400px] bg-[#EAE6FE] absolute top-6 left-10'></div>
-                        <Image src={Lines} className='absolute top-14 left-48'/>
-                        <Image src={Pic} className='absolute top-32 left-10' />
+                        <Image src={Lines} className='absolute top-14 left-48'alt='pics'/>
+                        <Image src={Pic} className='absolute top-32 left-10' alt='pics'/>
                     </div>
                 </div>
             </div>

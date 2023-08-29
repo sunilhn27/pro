@@ -17,8 +17,8 @@ export default function RootLayout({ children }) {
   return (
 
     <html lang="en">
-      <body className={`${inter.className} `} >
-        <Provider>
+      <body className={`${inter.className} `}  >
+        <Provider data-theme="dark">
           <Navbar />
           {children}
           <Footer />

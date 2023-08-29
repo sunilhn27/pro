@@ -11,7 +11,7 @@ import { useRouter } from 'next/navigation'
 function Projects() {
 
 
-    const Project = ({ img, title, tech ,link}) => {
+    const Project = ({ img, title, tech, link }) => {
 
         const router = useRouter();
 
@@ -25,9 +25,9 @@ function Projects() {
 
         return (
             <div className='flex flex-col shadow-xl rounded-lg py-1'>
-                <Image src={img} className='md:h-[22rem] md:w-[25rem]'/>
-                <div className='mt-5 px-2 bg-gray-600 opacity-25 text-white'>
-                    <h1 className='text-2xl'>{title}</h1>
+                <Image src={img} className='md:h-[18rem] md:w-[18rem]' alt='img' />
+                <div className='mt-5 px-2  '>
+                    <h1 className='text-2xl '>{title}</h1>
                     <div className='flex items-center space-x-3'>
                         <p >{tech}</p>
                         <Link href={link} onClick={handleLinkClick} >
@@ -41,10 +41,13 @@ function Projects() {
 
     return (
         <section className='mt-60 md:mt-12 md:my-12  h-[40rem] md:h-[30rem] '>
-            <div className='flex flex-col md:flex-row md:h-[30rem] justify-center items-center gap-2 py-6'>
+            <div className=' mx-auto flex justify-center my-10'>
+                <h1 className='text-2xl md:text-4xl'>Featured Portfolios</h1>
+            </div>
+            <div className='flex flex-col md:flex-row md:h-[30rem] justify-center items-center gap-6 py-6'>
 
-                <Project img={Project_1} title={"Tailwind-Boldo "} tech={"Next js "} link={"https://github.com/sunilhn27/tailwind-boldo"}/>
-                <Project img={Project_2} title={"TailWind RealEstate"} tech={"Next js"} link={"https://github.com/sunilhn27/tailwind-project-1"}/>
+                <Project img={Project_1} title={"Tailwind-Boldo "} tech={"Next js "} link={"https://github.com/sunilhn27/tailwind-boldo"} />
+                <Project img={Project_2} title={"TailWind RealEstate"} tech={"Next js"} link={"https://github.com/sunilhn27/tailwind-project-1"} />
                 <Project img={Project_3} title={"Tailwind Shopping App"} tech={"Next js"} link={"https://github.com/sunilhn27/tailwind-shoppingapp"} />
 
             </div>
