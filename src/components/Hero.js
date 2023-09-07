@@ -16,7 +16,7 @@ function Hero() {
                 <div className='text-4xl md:text-5xl font-semibold'>
                     <p>Sunil <span className='text-[#7E74F1]'>H N.</span></p>
                 </div>
-                <p className='w-[95%] md:w-[510px] lg:text-lg text-gray-500 '>Creative front-end developer with more than +5 years of experience in enterprise companies and startups. Proficient in JavaScript, Angular, and React. Passionate about UI/UX</p>
+                <p className='w-[95%] md:w-[510px] lg:text-lg text-gray-500 '>Creative front-end developer with more than +5 years of experience in enterprise companies and startups. Proficient in JavaScript, Next js, and React. Passionate about UI/UX</p>
                 <div className='flex space-x-6 '>
                     <AiFillGithub className='w-6 h-6' />
                     <AiOutlineInstagram className='w-6 h-6' />
