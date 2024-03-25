@@ -6,6 +6,7 @@ import { BsLinkedin } from 'react-icons/bs';
 import Pic from '@/asserts/images/Pic1.png';
 import Back from '@/asserts/images/back.png';
 import Lines from '@/asserts/images/lines.png';
+import Link from 'next/link';
 
 function Hero() {
     return (
@@ -18,10 +19,14 @@ function Hero() {
                 </div>
                 <p className='w-full md:max-w-md lg:text-lg text-gray-500 '>Creative front-end developer with more than +5 years of experience in enterprise companies and startups. Proficient in JavaScript, Next js, and React. Passionate about UI/UX</p>
                 <div className='flex space-x-6 '>
-                    <AiFillGithub className='w-6 h-6' />
+                    <Link href={"https://github.com/sunilhn27"} target="_blank" rel="noopener noreferrer">
+                        <AiFillGithub className='w-6 h-6' />
+                    </Link>
                     <AiOutlineInstagram className='w-6 h-6' />
                     <CiTwitter className='w-6 h-6' />
-                    <BsLinkedin className='w-6 h-6' />
+                    <Link href={"https://www.linkedin.com/in/sunil-h-n-178741136/"} target="_blank" rel="noopener noreferrer">
+                        <BsLinkedin className='w-6 h-6' />
+                    </Link>
                 </div>
             </div>
 
