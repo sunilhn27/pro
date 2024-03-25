@@ -27,8 +27,8 @@ function Hero() {
 
             {/* Image Section */}
             <div className='mb-12 flex justify-center w-full md:w-1/2'>
-                <div className='relative w-[80%] h-[20rem] md:w-[90%] md:h-[50rem]'>
-                    <Image src={Pic} className='absolute top-32 left-10 w-[10rem] h-[15rem]' alt='dummy' layout="fill" objectFit="cover" />
+                <div className='relative w-[80%] h-[10rem] md:w-[70%] md:h-[39rem] 2xl:h-[30rem] 2xl:w-[20rem]'>
+                    <Image src={Pic} className='absolute top-32 left-10 md:w-[5rem] md:h-[5rem]' alt='dummy' layout="fill" objectFit="cover" />
                 </div>
             </div>
         </section>
