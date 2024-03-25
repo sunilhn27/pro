@@ -56,7 +56,7 @@ function Contact() {
     }
 
     return (
-        <section className='mt-60 md:mt-12  mx-[1rem]'>
+        <section className='mt-70 md:mt-12  mx-[1rem]'>
             <div className='flex flex-col-reverse md:flex-row justify-center items-center space-x-16 '>
 
                 <div className=''>
