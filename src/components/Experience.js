@@ -21,7 +21,7 @@ function Experience() {
             designation: "QA Consultant",
             year: "Dec 2022 - Present · Full-time",
             place: "Bangalore ,India",
-            responsibilities: ["Training and Collaboration", "Recommendations and Strategy Development", "Quality Assessment and Analysis"],
+            responsibilities: ["Knowledge on FrontEnd Framework like Nextjs with Javascrit ,Typescript ","Good knowlege on Css Framework like Tailwind CSS", "Recommendations and Strategy Development", "Quality Assessment and Analysis"],
 
         },
         {
@@ -77,7 +77,7 @@ function Experience() {
                             <h3 className='text-lg text-gray-500'>{companies[selectedCompany].year}</h3>
 
                         </div>
-                        <div className='mt-12 '>
+                        <div className='mt-12'>
 
                             <div className='md:text-[1.3rem] space-y-2'>
                                 {companies[selectedCompany].responsibilities.map((res, index) => {
